@@ -1,4 +1,4 @@
-from random import randint
+# from random import randint
 P = 23
 G = 9
 
@@ -8,12 +8,12 @@ print('The Value of G is :%d'%(G))
 a = 4
 print('The Private Key a for Alice is :%d'%(a))
 
-x = int(pow(G,a,P))
+x = int(pow(G,a,P))#public key alice
 
 b = 3
 print('The Private Key b for Bob is :%d'%(b))
 
-y = int(pow(G,b,P))
+y = int(pow(G,b,P))#public key bob
 ka = int(pow(y,a,P))
 
 kb = int(pow(x,b,P))
